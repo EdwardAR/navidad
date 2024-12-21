@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad</title>
+    <link rel="icon" href="logonavidad.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #228B22; /* Verde bosque, típico de los árboles de Navidad */
+            overflow: hidden;
+        }
+
+        .titulo {
+            text-align: center;
+            background: linear-gradient(45deg, #ff0000, #ff6b6b, #ffffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 4.5em;
+            font-family: 'Mountains of Christmas', cursive;
+            padding: 30px 0;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            letter-spacing: 4px;
+            animation: brillar 2s ease-in-out infinite, sombra 1s infinite alternate;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .titulo::before {
+            content: "🎄";
+            position: absolute;
+            left: 20%;
+            transform: translateX(-50%);
+        }
+
+        .titulo::after {
+            content: "🎄";
+            position: absolute;
+            right: 20%;
+            transform: translateX(50%);
+        }
+
+        @keyframes brillar {
+            0% {
+                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            }
+
+            50% {
+                text-shadow: 0 0 20px #ff0000, 0 0 30px #ff6b6b;
+            }
+
+            100% {
+                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        @keyframes sombra {
+            0% {
+                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            }
+
+            100% {
+                text-shadow: 0 0 20px #ffffff;
+            }
+        }
+
+        .contenedor {
+            background: white;
+            width: 100%;
+            height: 80vh;
+            overflow: hidden;
+            margin: auto;
+            position: relative;
+        }
+
+        .arbolito {
+            width: 1000px;
+            height: auto;
+            position: absolute;
+            bottom: -20px;
+            right: 50%;
+            transform: translateX(50%);
+            animation: sube 3s ease-out 1;
+            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8); /* Resplandor alrededor del árbol */
+        }
+
+        .adorno {
+            width: 30px;
+            height: 30px;
+            background: gold;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            animation: aparece 3s linear 3s 1 backwards, cambio 3s linear infinite, mover 5s linear infinite;
+        }
+
+        .bolita1 {
+            top: 39%;
+            left: 49%;
+            animation-delay: 3s;
+        }
+
+        .bolita2 {
+            top: 47%;
+            left: 49%;
+            animation-delay: 5s;
+        }
+
+        .bolita3 {
+            top: 60%;
+            left: 49%;
+            animation-delay: 7s;
+        }
+
+        .bolita4 {
+            top: 73%;
+            left: 49%;
+            animation-delay: 9s;
+        }
+
+        @keyframes sube {
+            from {
+                transform: translateX(50%) translateY(100%);
+            }
+
+            to {
+                transform: translateX(50%) translateY(0%);
+            }
+        }
+
+        @keyframes cambio {
+            0% {
+                background: gold;
+                box-shadow: 0 0 2em gold;
+            }
+
+            33% {
+                background: green;
+                box-shadow: 0 0 2em green;
+            }
+
+            66% {
+                background: blue;
+                box-shadow: 0 0 2em blue;
+            }
+
+            100% {
+                background: orange;
+                box-shadow: 0 0 2em orange;
+            }
+        }
+
+        @keyframes aparece {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translateX(0) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-30px) translateY(20px);
+            }
+
+            100% {
+                transform: translateX(30px) translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo">Feliz Navidad Nenita</h1>
+    <div class="contenedor">
+        <img src="http://sprites.comohacerpara.com/img/07200g-hacer-arbol-navidad-diferente.jpg" alt="árbol de navidad" class="arbolito" />
+        <span class="bolita1 adorno"></span>
+        <span class="bolita2 adorno"></span>
+        <span class="bolita3 adorno"></span>
+        <span class="bolita4 adorno"></span>
+    </div>
+</body>
+
+</html>
