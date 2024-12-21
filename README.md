@@ -22,7 +22,7 @@ Este proyecto consiste en una **presentación visual de un árbol de Navidad int
 ## Instrucciones de Uso
 
 1. Clona o descarga este repositorio en tu máquina local.
-2. Abre el archivo `index.html` en tu navegador preferido.
+2. Abre el archivo `arbolnavideño.html` en tu navegador preferido.
 3. Disfruta de la animación interactiva del árbol de Navidad.
 
 ## Contribuciones
