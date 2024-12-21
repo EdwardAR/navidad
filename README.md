@@ -7,7 +7,6 @@ Este proyecto consiste en una **presentación visual de un árbol de Navidad int
 - **Animación de texto**: El título "Feliz Navidad Nenita" se presenta con un efecto de texto animado utilizando gradientes y sombras, creando un efecto de brillo y movimiento.
 - **Árbol de Navidad centrado**: El árbol de Navidad se muestra con una imagen y un resplandor decorativo adicional para darle un toque más llamativo.
 - **Bolitas interactivas**: Las bolitas de Navidad sobre el árbol se animan, cambiando de color y movimiento con el paso del tiempo, proporcionando una experiencia visual dinámica y atractiva.
-- **Diseño responsivo**: El diseño está optimizado para ajustarse a diferentes tamaños de pantalla, haciendo que la experiencia sea agradable en dispositivos móviles y de escritorio.
 
 ## Resultado Final
 
